@@ -32,7 +32,7 @@ const char* const g_strings[StrId_Max][17] =
 {
     [StrId_Loading] =
     {
-        STR_EN("Loading…"),
+        STR_EN("Lade…"),
         STR_ES("Cargando…"),
         STR_DE("Lade…"),
         STR_FR("Chargement…"),
@@ -48,7 +48,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_AppletMode] =
     {
-        STR_EN("● Applet Mode ●"),
+        STR_EN("● Applet Modus ●"),
         STR_ES("● Modo Applet ●"),
         STR_FR("● Mode Applet ●"),
         STR_ZH_HANS("● 小程序模式 ●"),
@@ -56,7 +56,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_Directory] =
     {
-        STR_EN("Directory"),
+        STR_EN("Verzeichnis"),
         STR_ES("Carpeta"),
         STR_DE("Verzeichnis"),
         STR_FR("Dossier"),
@@ -72,7 +72,7 @@ const char* const g_strings[StrId_Max][17] =
 
     /*[StrId_DefaultLongTitle] =
     {
-        STR_EN("Homebrew application"),
+        STR_EN("Homebrew App"),
         STR_ES("Aplicación homebrew"),
         STR_DE("Homebrew-Anwendung"),
         STR_FR("Application homebrew"),
@@ -88,7 +88,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_DefaultPublisher] =
     {
-        STR_EN("Unknown author"),
+        STR_EN("Unbekannter Autor"),
         STR_ES("Autor desconocido"),
         STR_DE("Unbekannter Autor"),
         STR_FR("Auteur inconnu"),
@@ -104,7 +104,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_IOError] =
     {
-        STR_EN("I/O Error"),
+        STR_EN("I/O-Fehler"),
         STR_ES("Error de E/S"),
         STR_DE("I/O-Fehler"),
         STR_FR("Erreur d'E/S"),
@@ -120,7 +120,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_CouldNotOpenFile] =
     {
-        STR_EN("Could not open file:\n%s"),
+        STR_EN("Datei kann nicht geöffnet werden:\n%s"),
         STR_ES("No se pudo abrir el archivo:\n%s"),
         STR_DE("Konnte Datei nicht öffnen:\n%s"),
         STR_FR("Impossible d'ouvrir le fichier :\n%s"),
@@ -136,16 +136,16 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_NroNotFound] =
     {
-        STR_EN("Could not find executable: %s"),
+        STR_EN("Ausführbare App nicht gefunden: %s"),
         STR_FR("Impossible trouver l'exécutable : %s"),
         STR_ZH_HANS("找不到可执行文件"),
     },
 
     [StrId_NoAppsFound_Title] =
     {
-        STR_EN("No applications found"),
+        STR_EN("Keine App gefunden"),
         STR_ES("No hay aplicaciones"),
-        STR_DE("Keine Anwendungen gefunden"),
+        STR_DE("Keine App gefunden"),
         STR_FR("Aucune application trouvée"),
         STR_IT("Nessun'applicazione trovata"),
         STR_JP("アプリが見つかりませんでした"),
@@ -160,9 +160,10 @@ const char* const g_strings[StrId_Max][17] =
     [StrId_NoAppsFound_Msg] =
     {
         STR_EN(
-            "No applications could be found on the SD card.\n"
-            "Make sure a folder named /switch exists in the\n"
-            "root of the SD card and it contains applications.\n"
+            "Auf der SD-Karte wurden keine Apps\n"
+            "gefunden. Stelle sicher, dass ein Ordner\n"
+            "/switch im Hauptverzeichnis der SD-Karte\n"
+            "existiert und Homebrew Apps enthält!"
         ),
         STR_ES(
             "No se han podido encontrar aplicaciones en la\n"
@@ -170,7 +171,7 @@ const char* const g_strings[StrId_Max][17] =
             "llamada /switch y que contenga aplicaciones.\n"
         ),
         STR_DE(
-            "Auf der SD-Karte wurden keine Anwendungen\n"
+            "Auf der SD-Karte wurden keine Apps\n"
             "gefunden. Stelle sicher, dass ein Verzeichnis\n"
             "namens /switch im Hauptverzeichnis der SD-Karte\n"
             "existiert und Anwendungen enthält!"
@@ -228,7 +229,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_LastLoadResult] =
     {
-        STR_EN("The last application returned an error:"),
+        STR_EN("Die letzte App hat einen Fehler verursacht:"),
         STR_ES("La última aplicación devolvió un error:"),
         STR_DE("Die letzte Anwendung erzeugte einen Fehler:"),
         STR_FR("La dernière application a retourné une erreur:"),
@@ -241,7 +242,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_AppLaunchError] =
     {
-        STR_EN("Failed to launch the application:"),
+        STR_EN("Konnte die Homebrewe App nicht starten:"),
         STR_DE("Konnte die Anwendung nicht starten:"),
         STR_FR("Erreur au lancement de l'application:"),
         STR_IT("Errore nell'avvio dell'applicazione:"),
@@ -252,7 +253,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_AppInfo_Author] =
     {
-        STR_EN("Author"),
+        STR_EN("Autor"),
         STR_ES("Autor"),
         STR_DE("Autor"),
         STR_FR("Auteur"),
@@ -284,7 +285,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_Actions_Launch] =
     {
-        STR_EN("Launch"),
+        STR_EN("Starten"),
         STR_ES("Lanzamiento"),
         STR_DE("Starten"),
         STR_FR("Lancer"),
@@ -300,7 +301,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_Actions_Open] =
     {
-        STR_EN("Open"),
+        STR_EN("Öffnen"),
         STR_ES("Abrir"),
         STR_DE("Öffnen"),
         STR_FR("Ouvrir"),
@@ -316,7 +317,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_Actions_Back] =
     {
-        STR_EN("Back"),
+        STR_EN("Zurück"),
         STR_ES("Volver"),
         STR_DE("Zurück"),
         STR_FR("Retour"),
@@ -345,7 +346,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_Actions_Apply] =
     {
-        STR_EN("Apply"),
+        STR_EN("Anwenden"),
         STR_FR("Appliquer"),
         STR_DE("Anwenden"),
         STR_ES("Aplicar"),
@@ -358,7 +359,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_Actions_Star] =
     {
-        STR_EN("Star"),
+        STR_EN("Favorit"),
         STR_ES("Agregar a favoritos"),
         STR_IT("Aggiungi ai preferiti"),
         STR_FR("Ajouter aux favoris"),
@@ -367,7 +368,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_Actions_Unstar] =
     {
-        STR_EN("Unstar"),
+        STR_EN("Kein Favorit"),
         STR_ES("Borrar de favoritos"),
         STR_IT("Rimuovi dai preferiti"),
         STR_FR("Retirer des favoris"),
@@ -376,7 +377,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_ThemeMenu] =
     {
-        STR_EN("Theme Menu"),
+        STR_EN("HB Themes"),
         STR_FR("Menu thèmes"),
         STR_DE("Theme Menü"),
         STR_ES("Menú temático"),
@@ -389,7 +390,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_ThemeNotApplied] =
     {
-        STR_EN("Theme cannot be applied because an error occurred."),
+        STR_EN("Das Theme konnte nicht geladen werden, da ein Fehler aufgetreten ist."),
         STR_DE("Das Theme konnte nicht geladen werden, da ein Fehler aufgetreten ist."),
         STR_FR("Le thème ne peut pas être appliqué car une erreur est survenue."),
         STR_ES("El tema no se pudo aplicar porque se ha producido un error."),
@@ -402,7 +403,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_DefaultThemeName] =
     {
-        STR_EN("Default Theme"),
+        STR_EN("Standart Theme"),
         STR_FR("Thème par défaut"),
         STR_DE("Standard Theme"),
         STR_IT("Tema di default"),
@@ -413,7 +414,7 @@ const char* const g_strings[StrId_Max][17] =
 
     /*[StrId_Reboot] =
     {
-        STR_EN(
+        STR_DE(
             "Returning to \xEE\x81\xB3HOME is not available.\n"
             "You're about to reboot your console.\n\n"
             "  \xEE\x80\x80 Reboot\n"
@@ -425,7 +426,7 @@ const char* const g_strings[StrId_Max][17] =
             "  \xEE\x80\x80 Reiniciar\n"
             "  \xEE\x80\x81 Cancelar"
         ),
-        STR_DE(
+        STR_EN(
             "Rückkehr zu \xEE\x81\xB3HOME nicht verfügbar.\n"
             "Deine Konsole wird neu gestartet.\n\n"
             "  \xEE\x80\x80 Neu starten\n"
@@ -490,7 +491,7 @@ const char* const g_strings[StrId_Max][17] =
 
     /*[StrId_ReturnToHome] =
     {
-        STR_EN(
+        STR_DE(
             "You're about to return to \xEE\x81\xB3HOME.\n\n"
             "  \xEE\x80\x80 Return\n"
             "  \xEE\x80\x81 Cancel\n"
@@ -502,7 +503,7 @@ const char* const g_strings[StrId_Max][17] =
             "  \xEE\x80\x81 Cancelar\n"
             "  \xEE\x80\x82 Reiniciar"
         ),
-        STR_DE(
+        STR_EN(
             "Rückkehr zum \xEE\x81\xB3HOME-Menü.\n\n"
             "  \xEE\x80\x80 Fortfahren\n"
             "  \xEE\x80\x81 Abbrechen\n"
@@ -566,7 +567,7 @@ const char* const g_strings[StrId_Max][17] =
 
     /*[StrId_TitleSelector] =
     {
-        STR_EN("Title selector"),
+        STR_EN("Titel-Auswählen"),
         STR_ES("Selector de título"),
         STR_DE("Titel-Auswahl"),
         STR_FR("Sélecteur de titre"),
@@ -582,9 +583,9 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_ErrorReadingTitleMetadata] =
     {
-        STR_EN("Error reading title metadata.\n%08lX%08lX@%d"),
+        STR_DE("Error reading title metadata.\n%08lX%08lX@%d"),
         STR_ES("Error leyendo los metadatos de los títulos.\n%08lX%08lX@%d"),
-        STR_DE("Fehler beim Lesen der Titel-Metadaten.\n%08lX%08lX@%d"),
+        STR_EN("Fehler beim Lesen der Titel-Metadaten.\n%08lX%08lX@%d"),
         STR_FR(
             "Erreur lors de la lecture des métadonnées\n"
             "du titre.\n%08lX%08lX@%d"
@@ -601,9 +602,9 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_NoTitlesFound] =
     {
-        STR_EN("No titles could be detected."),
+        STR_DE("No titles could be detected."),
         STR_ES("No se han podido detectar títulos."),
-        STR_DE("Keine Titel gefunden."),
+        STR_EN("Keine Titel gefunden."),
         STR_FR("Aucun titre trouvé."),
         STR_IT("Nessun titolo trovato."),
         STR_JP("タイトルが見つかりませんでした。"),
@@ -617,7 +618,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_SelectTitle] =
     {
-        STR_EN(
+        STR_DE(
             "Please select a target title.\n\n"
             "  \xEE\x80\x80 Select\n"
             "  \xEE\x80\x81 Cancel"
@@ -627,7 +628,7 @@ const char* const g_strings[StrId_Max][17] =
             "  \xEE\x80\x80 Seleccionar\n"
             "  \xEE\x80\x81 Cancelar"
         ),
-        STR_DE(
+        STR_EN(
             "Bitte wähle den Ziel-Titel aus.\n\n"
             "  \xEE\x80\x80 Auswählen\n"
             "  \xEE\x80\x81 Abbrechen"
@@ -681,7 +682,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_NoTargetTitleSupport] =
     {
-        STR_EN(
+        STR_DE(
             "This homebrew exploit does not have support\n"
             "for launching applications under target titles.\n"
             "Please use a different exploit."
@@ -691,7 +692,7 @@ const char* const g_strings[StrId_Max][17] =
             "ejecutar aplicaciones bajo títulos de destino.\n"
             "Use otro exploit diferente."
         ),
-        STR_DE(
+        STR_EN(
             "Dieser Homebrew-Exploit unterstützt das Starten\n"
             "von Anwendungen unter Ziel-Titeln nicht.\n"
             "Bitte verwende einen anderen Exploit."
@@ -745,7 +746,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_MissingTargetTitle] =
     {
-        STR_EN(
+        STR_DE(
             "The application you attempted to run requires\n"
             "a title that is not installed in the system."
         ),
@@ -753,7 +754,7 @@ const char* const g_strings[StrId_Max][17] =
             "La aplicación seleccionada necesita un título\n"
             "que no está instalado en el sistema."
         ),
-        STR_DE(
+        STR_EN(
             "Die ausgewählte Anwendung benötigt einen\n"
             "Titel der nicht installiert ist."
         ),
@@ -797,9 +798,9 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_NetLoader] =
     {
-        STR_EN("NetLoader"),
+        STR_DE("NetLoader"),
         STR_ES("Cargador de programas"),
-        STR_DE("Netzwerk-Loader"),
+        STR_EN("NetLoader"),
         STR_FR("NetLoader"),
         STR_IT("Caricamento programmi"),
         STR_JP("ネットローダ"),
@@ -813,9 +814,9 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_NetLoaderUnavailable] =
     {
-        STR_EN("The NetLoader is currently unavailable."),
+        STR_DE("The NetLoader is currently unavailable."),
         STR_ES("El cargador de programas no está disponible."),
-        STR_DE("Der Netzwerk-Loader ist zur Zeit nicht verfügbar."),
+        STR_EN("Der NetLoader ist zur Zeit nicht verfügbar."),
         STR_FR("Le programme nxlink est indisponible."),
         STR_IT("Il caricamento programmi nxlink non è disponibile."),
         STR_JP("nxlinkネットローダは現在利用できません。"),
@@ -829,9 +830,9 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_NetLoaderError] =
     {
-        STR_EN("An error occurred.\nTechnical details: [%s:%d]"),
+        STR_DE("An error occurred.\nTechnical details: [%s:%d]"),
         STR_ES("Ha ocurrido un error.\nDatos técnicos: [%s:%d]"),
-        STR_DE("Ein Fehler ist aufgetreten\nTechnische Details: [%s:%d]"),
+        STR_EN("Ein Fehler ist aufgetreten\nTechnische Details: [%s:%d]"),
         STR_FR("Une erreur s'est produite.\nDétails techniques : [%s:%d]"),
         STR_IT("Si è verificato un errore.\nDettagli tecnici : [%s:%d]"),
         STR_JP("エラーが発生しました。\n技術的な詳細：[%s:%d]"),
@@ -845,8 +846,8 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_NetLoaderOffline] =
     {
-        STR_EN("Offline, waiting for network…"),
-        STR_DE("Offline, warte auf Netzwerk…"),
+        STR_DE("Offline, waiting for network…"),
+        STR_EN("Offline, warte auf Netzwerk…"),
         STR_FR("Hors-ligne, en attente d'une connection..."),
         STR_IT("Disconnesso, in attesa della connessione…"),
         STR_ES("Desconectado, esperando a la red..."),
@@ -858,7 +859,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_NetLoaderActive] =
     {
-        STR_EN(
+        STR_DE(
             "Waiting for nxlink to connect…\n"
             "IP Addr: %lu.%lu.%lu.%lu, Port: %d"
         ),
@@ -866,7 +867,7 @@ const char* const g_strings[StrId_Max][17] =
             "Esperando a que se conecte nxlink…\n"
             "Dir.IP: %lu.%lu.%lu.%lu, Puerto: %d"
         ),
-        STR_DE(
+        STR_EN(
             "Warte auf Verbindung von nxlink…\n"
             "IP Addr: %lu.%lu.%lu.%lu, Port: %d"
         ),
@@ -910,7 +911,7 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_NetLoaderTransferring] =
     {
-        STR_EN(
+        STR_DE(
             "Transferring…\n"
             "%zu out of %zu KiB written"
         ),
@@ -918,7 +919,7 @@ const char* const g_strings[StrId_Max][17] =
             "Transfiriendo…\n"
             "%zu de %zu KiB escritos"
         ),
-        STR_DE(
+        STR_EN(
             "Übertragen…\n"
             "%zu von %zu KiB geschrieben"
         ),

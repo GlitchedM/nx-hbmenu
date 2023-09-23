@@ -91,18 +91,19 @@ bool assetObjectFromSetting(config_setting_t *asset_setting, AssetId id, ThemeLa
 void themeStartup(ThemePreset preset) {
     themeGlobalPreset = preset;
     theme_t themeLight = (theme_t) {
-        .textColor = MakeColor(0, 0, 0, 255),
-        .attentionTextColor = MakeColor(255, 0, 0, 255),
-        .frontWaveColor = MakeColor(100, 212, 250, 255),
-        .middleWaveColor = MakeColor(100, 153, 255, 255),
-        .backWaveColor = MakeColor(154, 171, 255, 255),
-        .backgroundColor = MakeColor(233, 236, 241, 255),
-        .highlightColor = MakeColor(91, 237, 224, 255),
-        .highlightGradientEdgeColor = MakeColor(91,176,224,255),
+        .textColor = MakeColor(60,60,60,255),
+        .attentionTextColor = MakeColor(255,120,30,255),
+        .frontWaveColor = MakeColor(60,60,60,255),
+        .middleWaveColor = MakeColor(235,204,6,255),
+        .backWaveColor = MakeColor(250,170,0,255),
+        .backgroundColor = MakeColor(255, 255, 255, 255),
+        .highlightColor = MakeColor(200,103,5,255),
+        .highlightGradientEdgeColor = MakeColor(255,255,10,255),
         .separatorColor = MakeColor(219, 218, 219, 255),
-        .borderColor = MakeColor(255,255,255,255),
-        .borderTextColor = MakeColor(64,64,64,255),
+        .borderColor = MakeColor(199,164,88,255),
+        .borderTextColor = MakeColor (60,60,60,255),
         .progressBarColor = MakeColor(0,224,0,255),
+        .logoColor = MakeColor(250,170,0,255),
         .enableWaveBlending = 0,
         .buttonAText = "\uE0E0",
         .buttonBText = "\uE0E1",
@@ -115,18 +116,19 @@ void themeStartup(ThemePreset preset) {
     };
 
     theme_t themeDark = (theme_t) {
-        .textColor = MakeColor(255, 255, 255, 255),
-        .attentionTextColor = MakeColor(255, 0, 0, 255),
-        .frontWaveColor = MakeColor(96, 204, 204, 255),
-        .middleWaveColor = MakeColor(66, 154, 159, 255),
-        .backWaveColor = MakeColor(73, 103, 169, 255),
-        .backgroundColor = MakeColor(45, 45, 50, 255),
-        .highlightColor = MakeColor(91, 237, 224, 255),
-        .highlightGradientEdgeColor = MakeColor(91,176,224,255),
+        .textColor = MakeColor(230,190,10,255),
+        .attentionTextColor = MakeColor(255,120,30,255),
+        .frontWaveColor = MakeColor(40,40,40,255),
+        .middleWaveColor = MakeColor(235,204,6,255),
+        .backWaveColor = MakeColor(250,170,0,255),
+        .backgroundColor = MakeColor(0, 0, 0, 0),
+        .highlightColor = MakeColor(200,103,5,255),
+        .highlightGradientEdgeColor = MakeColor(255,255,10,255),
         .separatorColor = MakeColor(219, 218, 219, 255),
-        .borderColor = MakeColor(255,255,255,255),
-        .borderTextColor = MakeColor(64,64,64,255),
+        .borderColor = MakeColor(22,22,22,255),
+        .borderTextColor = MakeColor(250,199,2,255),
         .progressBarColor = MakeColor(0,224,0,255),
+        .logoColor = MakeColor(250,170,0,255),
         .enableWaveBlending = 0,
         .buttonAText = "\uE0A0",
         .buttonBText = "\uE0A1",
@@ -147,14 +149,14 @@ void themeStartup(ThemePreset preset) {
             },
 
             [ThemeLayoutId_HbmenuVersion] = {
-                .visible = true,
+                .visible = false,
                 .posType = false,
                 .posStart = {184, 46 + 18},
                 .font = interuiregular14,
             },
 
             [ThemeLayoutId_LoaderInfo] = {
-                .visible = true,
+                .visible = false,
                 .posType = true,
                 .posStart = {43, 46 + 18 + 20},
                 .posEnd = {184},
@@ -209,7 +211,11 @@ void themeStartup(ThemePreset preset) {
                 .posStart = {0, -29},
             },
 
-            // ThemeLayoutId_BackgroundImage is not set with the defaults.
+            [ThemeLayoutId_BackgroundImage] = {
+                .visible = true,
+                .posType = false,
+                .size = {0, 0},
+            },
 
             [ThemeLayoutId_BackWave] = {
                 .visible = true,
