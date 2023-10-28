@@ -120,7 +120,7 @@ void themeStartup(ThemePreset preset) {
         .frontWaveColor = MakeColor(6, 0, 100, 255),
         .middleWaveColor = MakeColor(83, 169, 255, 255),
         .backWaveColor = MakeColor(0, 0, 160, 255),
-        .backgroundColor = MakeColor(10, 10, 100, 100),
+        .backgroundColor = MakeColor(10, 10, 50, 100),
         .highlightColor = MakeColor(1, 204, 255, 255),
         .highlightGradientEdgeColor = MakeColor(102, 240, 255, 255),
         .separatorColor = MakeColor(219, 218, 219, 255),
