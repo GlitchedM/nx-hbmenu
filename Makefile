@@ -1,4 +1,4 @@
-export APP_VERSION	:=	3.6.0_blue_mod
+export APP_VERSION	:=	Blue Edition
 
 .PHONY: clean all nx pc dist-bin
 
